@@ -1,0 +1,168 @@
+\documentclass{article}
+\usepackage{tcolorbox}
+\usepackage[margin=.20in]{geometry}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{Arvo}
+
+% Redefine document properties %
+\setlength\parindent{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=1.2ex}
+\titlespacing*{\section}{0pt}{.2ex}{-2ex}
+\titlespacing*{\subsection}{0pt}{.2ex}{.5ex}
+\titleformat*{\subsection}{\slshape\bfseries\large}
+
+%%% Create commands %%%
+
+% Resume section heading
+\newcommand{\resumesection}[1]{
+	\section*{\Large\textbf{#1}}
+	\hrulefill
+	\vspace{1ex}
+}
+
+%%% Define Personal Info %%%
+\newcommand{\name}{Deven Mallamo}
+\newcommand{\address}{New Baltimore, Michigan} 
+\newcommand{\phone}{586-260-8870} 
+\newcommand{\email}{devenmallamo@gmail.com} 
+\newcommand{\linkedin}{Deven Mallamo}
+\newcommand{\github}{NEVED123}
+
+%%% Define Colors %%%
+\definecolor{boxfill}{RGB}{111, 145,160} %Border : #405762
+\definecolor{boxframe}{RGB}{64, 87,98}  % Fill: #6F91A0
+
+%%% Resume begins here %%%
+
+\begin{document}
+
+\begin{tcolorbox}[colback= boxfill,colframe=boxframe]
+	\begin{center}
+		\vspace{5pt}
+		\href{https://devenmallamo.com}{\Huge \textbf \name} 
+
+		\normalsize \vspace{10pt}
+
+		\faHome \space \address \space | 
+		\faPhone \space \phone \space |
+		\href{mailto:\email}{\faEnvelope \space \email} \space | 
+		\href{https://www.linkedin.com/in/deven-mallamo/}{\faLinkedin \space \linkedin} \space | 
+		\href{https://github.com/NEVED123}{\faGithub \space \github} |
+	\end{center}
+\end{tcolorbox}
+
+\vspace{1ex}
+% Objective % 
+
+\resumesection{Objective}
+
+\vspace{.2ex}	
+
+Senior computer science student at Oakland University seeking a position as a Software Development Intern. Proficient in many programming languages and software development tools. Passionate about creating, programming, learning new skills and tools, solving problems, and helping others.
+
+\vspace{.5ex}	
+
+% Education % 
+
+\resumesection{Education}
+
+\vspace{.2ex}	
+
+Oakland University - GPA: 3.96 \hfill Expected Graduation: May 2025
+
+% Cursed horizontal space because the italics font puts the period too close to the A. It is equal to .75pt (65536 * .75), however Latex does not allow fractional pts.
+\textit {B.S in Computer Science, B.\hspace{49152sp}A in Piano Performance} 
+
+\vspace{.5ex}
+
+% Work Experience %
+
+\resumesection{Work Experience}
+
+\subsection*{Software Design Intern} 
+
+\textit{KUKA Systems North America LLC - Sterling Heights, MI} \hfill {May - August 2023}
+
+\begin{itemize}
+	\item Used virtual commissioning software to create an environment to test PLC code that controls manufacturing plants for GM. Required a deep understanding of control flow, and strong problem solving and troubleshooting skills.
+	\item Utilized C\# and .NET to create a tool that can organize, query, and create testing notes, allowing employees to quickly find information about past projects and efficiently create new notes. The software increased productivity for our department, and its flexible design allowed for quick changes to be adapted by another department.
+\end{itemize}
+
+\subsection*{Music Theory Tutor / Piano Teacher}
+
+\textit{Oakland University - Rochester, MI} \hfill {September 2022 - Present}
+
+\textit{Music Stadium Center Inc - Macomb, MI } \hfill {February 2016 - August 2021}
+
+\begin{itemize}
+	\item Communicated complex ideas in a simple manner by tailoring lessons to the needs of each individual student.
+	\item Became a leader by motivating and inspiring students to accomplish their goals.
+\end{itemize}
+
+% Projects %
+
+\resumesection{Projects}
+
+\subsection*{Four Player Chess Timer App}
+
+\begin{itemize}
+	\item Creating a real-time four player chess clock application for Android and iOS using the Flutter framework and Dart to facilitate timing control for four players across different devices within the same local network. 
+	\item Designed the user interface using Figma, Flutter's widget library to implement the interface, and Dart for additional logic.
+	% \item Deployed the app on the Apple App Store and Google Play Store, where it currently as x downloads.
+\end{itemize}
+
+\subsection*{Portfolio Website}
+
+\begin{itemize}
+	\item Designed and created a responsive personal portfolio website, showcasing projects, technical skills, and other \linebreak{}information using HTML, Sass, and JavaScript.
+	\item Hosting the website with an AWS Linux EC Instance with an S3 Bucket for storage.
+\end{itemize}
+
+\subsection*{PgnAnalyzer}
+
+\begin{itemize}
+	\item Built an extensible framework for gathering data about a large number of chess games. Developed using C\# and the .NET Framework. 
+	\item Allows users to create a custom analysis to run across many games, and export the data in a file format of their choice.
+\end{itemize}
+
+% Technical Skills
+
+\resumesection{Technical Skills}
+
+\vspace{.2ex}
+
+\textbf{Programming Languages} - C\#,  JavaScript/TypeScript, Dart, Java, Python, HTML, CSS
+
+\textbf{Frameworks/Libraries} - Flutter, React, React Native, Bootstrap, SCSS/Sass, Jest, JUnit
+
+\textbf{Tools} - Git/GitHub, Visual Studio Code, Visual Studios, Various IDEs
+
+\vspace{.5ex}
+
+% Activities and Achievements
+
+\resumesection{Activities and Achievements}
+
+\vspace{.2ex}
+
+\textbf {Campus Involvement} - Various Musical Ensembles, Founder of the Rubik's Cube Club, President of the Chess Club.
+
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=.75ex}
+
+	\begin{itemize}
+		\item Gained leadership skills, organizing special events, and managing the club's budget.
+	\end{itemize}
+
+\textbf {Volunteer Work} - Oakland School of Music, Rejoyceful Animal Rescue, World Medical Relief
+
+	\begin{itemize}
+		\item Became more active in the local community by helping with charitable causes.
+	\end{itemize}
+
+\end{document}
