@@ -1,7 +1,8 @@
 # My Resume
 
-![](Deven Mallamo Resume 2023-24.pdf "Resume")
-
 When revising my resume from last year, I chose to recreate it using LaTeX, giving fine control over spacing and formatting.
 
-Feel free to use this template for inspiration.
+Created with MikTeX, which handles all package importing automatically, and is best for editing this document.
+
+Feel free to use this template for inspiration. 
+
